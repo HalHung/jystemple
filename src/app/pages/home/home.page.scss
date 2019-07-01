@@ -1,0 +1,99 @@
+.general-activity-frame{
+
+    .general-activity-bg {
+        background-image: url(../../../assets/image/grneral-activity.jpg);
+        position: absolute;
+        background-position: center center;
+        background-size: cover;
+        height: 50%;
+        width: 100%;
+    }
+
+    .general-activity {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        text-align: center;
+        span {
+            display: block;
+            font-size: 80px;
+            color: white;
+
+        } 
+    }
+}
+
+.dona-food-frame{
+
+    .dona-food-bg {
+        background-image: url(../../../assets/image/dona-food.jpg);
+        position: absolute;
+        background-position: center center;
+        background-size: cover;
+        top: 50%;
+        height: 50%;
+        width: 50%;
+    }
+
+    .dona-food {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        height: 50%;
+        width: 50%;
+        background-color: rgba(0, 0, 0, 0.4);
+        text-align: center;
+        span {
+            display: block;
+            font-size: 80px;
+            color: white;
+
+        } 
+    }
+}
+
+.dona-temple-frame{
+
+    .dona-temple-bg {
+        background-image: url(../../../assets/image/dona-temple.jpg);
+        position: absolute;
+        background-position: center center;
+        background-size: cover;
+        top: 50%;
+        right: 0%;
+        height: 50%;
+        width: 50%;
+    }
+
+    .dona-temple {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        right: 0%;
+        height: 50%;
+        width: 50%;
+        background-color: rgba(0, 0, 0, 0.4);
+        text-align: center;
+        span {
+            display: block;
+            font-size: 80px;
+            color: white;
+
+        } 
+    }
+}
+
+.jys {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    right: 0%;
+}

@@ -1,0 +1,49 @@
+ion-content {
+    // text-align: center;
+}
+
+ion-grid {
+    padding: 7rem;
+    
+    ion-item {
+        margin-top: 10px;
+
+        ion-input {
+            font-size: 26px;
+        }
+    }
+}
+
+ion-button {
+    font-size: 26px;
+    float: right;
+    color: black;
+}
+
+.phone-number {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../assets/image/lotus-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+
+    h1 {
+        color: white;
+    }
+}
+
+.white-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.jys {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 56px;
+    width: 56px;
+}

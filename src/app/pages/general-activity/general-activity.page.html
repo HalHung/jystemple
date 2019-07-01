@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title text-center>一般活動報名</ion-title>
+    <div class="jys" (click)="homePage()">
+      <img src="../../../assets/image/JYTemple.jpg"/>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="white-layer"></div>
+  <div class="phone-number">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <h1>請輸入電話號碼: </h1>
+        </ion-col>
+        <ion-col size="9">
+          <ion-item>
+            <ion-input clearInput type="number"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button color="light" shope="round" (click)="familyMember()">確認</ion-button><!--沒有輸入電話要disable-->
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
