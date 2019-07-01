@@ -38,6 +38,22 @@
     }
 
     .submit {
-        font-size: 20px;
+        font-size: 26px;
+        height: 46px;
+    }
+}
+
+.alert-text {
+    text-align: center;
+}
+
+.singup-btn {
+    padding: 1em 3em;
+    text-align: center;
+
+    ion-button {
+        font-size: 26px;
+        height: 46px;
+        // float: right;
     }
 }

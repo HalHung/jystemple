@@ -24,6 +24,10 @@ const routes: Routes = [
     path: 'member-record',
     loadChildren: './pages/member-record/member-record.module#MemberRecordPageModule'
   },
+  {
+    path: 'new-activity',
+    loadChildren: './pages/new-activity/new-activity.module#NewActivityPageModule'
+  },
 ];
 
 @NgModule({
