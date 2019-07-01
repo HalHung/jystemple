@@ -1,9 +1,57 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>member-record</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="general-activity"></ion-back-button>
+    </ion-buttons>
+    <ion-title text-center>一般活動報名</ion-title>
+    <div class="jys" (click)="homePage()">
+      <img src="../../../assets/image/JYTemple.jpg"/>
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <div class="applicant-info">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="2">
+          信眾: 
+        </ion-col>
+        <ion-col>
+          陳爸爸
+        </ion-col>
+        <ion-col size="2.5">
+          報名活動: 
+        </ion-col>
+        <ion-col class="actvity-name">
+          109年度光明燈
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div>
+    <ion-grid class="member-data">
+      <ion-row>
+        <ion-col>序號</ion-col>
+        <ion-col>繳款單號</ion-col>
+        <ion-col>繳款日期</ion-col>
+        <ion-col>金額</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>1</ion-col>
+        <ion-col>P01081025001</ion-col>
+        <ion-col>108/10/25</ion-col>
+        <ion-col>$500</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>2</ion-col>
+        <ion-col>P01081110029</ion-col>
+        <ion-col>108/11/10</ion-col>
+        <ion-col>$500</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="total"><span>共繳款2次，總金額$1,000</span></ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 </ion-content>

@@ -1,0 +1,31 @@
+.jys {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 56px;
+    width: 56px;
+}
+
+.applicant-info {
+    padding: 2em 6em;
+    font-size: 26px;
+}
+
+.member-data {
+    font-size: 26px;
+    padding: 1em 3em;
+
+    ion-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .total {
+        display: inherit;
+
+        span {
+            float: right;
+        }
+    }
+}

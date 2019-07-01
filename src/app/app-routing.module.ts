@@ -20,7 +20,10 @@ const routes: Routes = [
     path: 'family-member',
     loadChildren: './pages/family-member/family-member.module#FamilyMemberPageModule'
   },
-  { path: 'member-record', loadChildren: './pages/member-record/member-record.module#MemberRecordPageModule' },
+  {
+    path: 'member-record',
+    loadChildren: './pages/member-record/member-record.module#MemberRecordPageModule'
+  },
 ];
 
 @NgModule({
