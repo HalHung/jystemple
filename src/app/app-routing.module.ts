@@ -28,6 +28,10 @@ const routes: Routes = [
     path: 'new-activity',
     loadChildren: './pages/new-activity/new-activity.module#NewActivityPageModule'
   },
+  {
+    path: 'not-found',
+    loadChildren: './pages/not-found/not-found.module#NotFoundPageModule'
+  },
 ];
 
 @NgModule({
