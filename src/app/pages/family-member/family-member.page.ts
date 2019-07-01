@@ -19,4 +19,7 @@ export class FamilyMemberPage implements OnInit {
   memberRecord() {
     this.router.navigateByUrl('/member-record');
   }
+  newActivity() {
+    this.router.navigateByUrl('/new-activity');
+  }
 }
