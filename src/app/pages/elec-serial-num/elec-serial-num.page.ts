@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-general-activity',
-  templateUrl: './general-activity.page.html',
-  styleUrls: ['./general-activity.page.scss'],
+  selector: 'app-elec-serial-num',
+  templateUrl: './elec-serial-num.page.html',
+  styleUrls: ['./elec-serial-num.page.scss'],
 })
-export class GeneralActivityPage implements OnInit {
+export class ElecSerialNumPage implements OnInit {
 
   constructor(private router: Router) { }
 
@@ -16,12 +16,8 @@ export class GeneralActivityPage implements OnInit {
   homePage() {
     this.router.navigateByUrl('/home');
   }
-
   familyMember() {
     this.router.navigateByUrl('/family-member');
-  }
-  elecSerialNum() {
-    this.router.navigateByUrl('/elec-serial-num');
   }
 
 }

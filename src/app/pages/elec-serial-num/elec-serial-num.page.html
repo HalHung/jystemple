@@ -11,14 +11,19 @@
 </ion-header>
 
 <ion-content>
-  <div class="block-layer"></div>
   <div class="phone-number">
     <ion-grid>
       <ion-row>
-        <ion-col>
-          <h1>請輸入電話號碼: </h1>
+        <ion-col size="2.5">
+          <h1>請輸入電編: </h1>
         </ion-col>
-        <ion-col size="9">
+        <ion-col size="4">
+          <ion-item>
+            <ion-input clearInput type="number"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="1" class="center"> ~ </ion-col>
+        <ion-col size="4">
           <ion-item>
             <ion-input clearInput type="number"></ion-input>
           </ion-item>
@@ -29,23 +34,22 @@
           <h1 class="float-right">活動年度</h1>
         </ion-col>
         <ion-col>
-
+          <ion-input placeholder="109" class="margintop"></ion-input>
         </ion-col>
+        <ion-col></ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
           <ion-checkbox class="float-right"></ion-checkbox>
         </ion-col>
-        <ion-col>
+        <ion-col size="5">
           <h1>包含上一年度未繳清單</h1>
         </ion-col>
+        <ion-col></ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
-          <ion-button color="light" (click)="elecSerialNum()">改用電編查詢</ion-button>
-        </ion-col>
-        <ion-col>
-          <ion-button color="light" (click)="familyMember()" class="float-right">確認</ion-button><!--沒有輸入電話要disable-->
+          <ion-button color="light" (click)="familyMember()" class="float-right">確認</ion-button><!--沒有輸入電編要disable-->
         </ion-col>
       </ion-row>
     </ion-grid>

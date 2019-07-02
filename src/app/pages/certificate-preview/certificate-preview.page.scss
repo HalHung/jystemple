@@ -13,40 +13,24 @@
     .phone-number {
         padding-top: 8px;
     }
-
-    .elec-number {
-        padding-top: 8px;
-    }
 }
 
-.member-data {
+.certifi-info {
     font-size: 26px;
-    padding: 1em 3em;
+    padding: 0% 5em;
 
-    .checkbox {
+    ion-col {
         display: flex;
         justify-content: center;
         align-items: center;
-
-    }
-
-    .submit {
-        font-size: 26px;
-        height: 46px;
     }
 }
 
-.alert-text {
-    text-align: center;
-}
-
-.singup-btn {
-    padding: 1em 3em;
-    text-align: center;
+.btns {
+    padding: 3em 7em;
 
     ion-button {
-        font-size: 26px;
         height: 46px;
-        // float: right;
+        font-size: 26px;
     }
 }

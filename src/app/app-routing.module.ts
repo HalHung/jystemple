@@ -40,6 +40,18 @@ const routes: Routes = [
     path: 'sum',
     loadChildren: './pages/sum/sum.module#SumPageModule'
   },
+  {
+    path: 'certificate-option',
+    loadChildren: './pages/certificate-option/certificate-option.module#CertificateOptionPageModule'
+  },
+  {
+    path: 'elec-serial-num',
+    loadChildren: './pages/elec-serial-num/elec-serial-num.module#ElecSerialNumPageModule'
+  },
+  {
+    path: 'certificate-preview',
+    loadChildren: './pages/certificate-preview/certificate-preview.module#CertificatePreviewPageModule'
+  },
 ];
 
 @NgModule({

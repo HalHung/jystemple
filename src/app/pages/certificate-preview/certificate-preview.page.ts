@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-sum',
-  templateUrl: './sum.page.html',
-  styleUrls: ['./sum.page.scss'],
+  selector: 'app-certificate-preview',
+  templateUrl: './certificate-preview.page.html',
+  styleUrls: ['./certificate-preview.page.scss'],
 })
-export class SumPage implements OnInit {
+export class CertificatePreviewPage implements OnInit {
 
   constructor(private router: Router) { }
 
@@ -15,9 +15,6 @@ export class SumPage implements OnInit {
 
   homePage() {
     this.router.navigateByUrl('/home');
-  }
-  certificateOption() {
-    this.router.navigateByUrl('/certificate-option');
   }
 
 }

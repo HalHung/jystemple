@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="family-member"></ion-back-button>
+    </ion-buttons>
+    <ion-title text-center>一般活動報名</ion-title>
+    <div class="jys" (click)="homePage()">
+      <img src="../../../assets/image/JYTemple.jpg"/>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="print-or-not">
+    <ion-grid>
+      <ion-row>
+        <ion-col>要不要印感謝狀？</ion-col>
+        <ion-col size="2">
+          <ion-checkbox></ion-checkbox>要
+        </ion-col>
+        <ion-col>
+          <ion-checkbox></ion-checkbox>不用(之後無法補印)
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="certificate-name">
+    <ion-grid>
+      <ion-row>
+        <ion-col>感謝狀上要印誰的名字？</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col><ion-checkbox></ion-checkbox>陳大明</ion-col>
+        <ion-col><ion-checkbox></ion-checkbox>陳爸爸</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col><ion-checkbox></ion-checkbox>陳媽媽</ion-col>
+        <ion-col><ion-checkbox></ion-checkbox>陳老婆</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col><ion-checkbox></ion-checkbox>陳兒子</ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="5" class="margintop">抬頭是否要加上“闔家”？</ion-col>
+        <ion-col class="margintop"><ion-checkbox></ion-checkbox>要</ion-col>
+        <ion-col>
+          <ion-button (click)="preview()">確認</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button>清除</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

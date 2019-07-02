@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="family-member"></ion-back-button>
+    </ion-buttons>
+    <ion-title text-center>一般活動報名</ion-title>
+    <div class="jys" (click)="homePage()">
+      <img src="../../../assets/image/JYTemple.jpg"/>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="applicant-info">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="1.5">
+            報名者: 
+          </ion-col>
+          <ion-col size="2">
+            陳大明
+          </ion-col>
+          <ion-col size="2">
+            行動電話: 
+          </ion-col>
+          <ion-col class="phone-number">
+            0987-654-321
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="1.5">
+            感謝狀: 
+          </ion-col>
+          <ion-col>
+            陳大明闔家
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  </div>
+  
+  <div class="certifi-info">
+    <ion-grid>
+      <ion-row>
+        <ion-col>信眾</ion-col>
+        <ion-col>活動年度</ion-col>
+        <ion-col>報名活動</ion-col>
+        <ion-col>已繳金額</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>陳老婆</ion-col>
+        <ion-col>109</ion-col>
+        <ion-col>太歲燈</ion-col>
+        <ion-col>$1000</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>陳兒子</ion-col>
+        <ion-col>109</ion-col>
+        <ion-col>光明燈</ion-col>
+        <ion-col>$1000</ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <ion-grid class="btns">
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="homePage()">返回首頁</ion-button>
+      </ion-col>
+      <ion-col></ion-col>
+      <ion-col></ion-col>
+      <ion-col>
+        <ion-button>列印繳款單</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

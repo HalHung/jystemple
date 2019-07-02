@@ -1,0 +1,30 @@
+ion-checkbox {
+    margin-right: 8px;
+}
+
+.jys {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 56px;
+    width: 56px;
+}
+
+.print-or-not {
+    padding: 2em 6em;
+    font-size: 26px;
+}
+
+.certificate-name {
+    padding: 0 6em;
+    font-size: 26px;
+
+    ion-button {
+        font-size: 26px;
+        height: 46px;
+    }
+
+    .margintop {
+        margin-top: 8px;
+    }
+}
