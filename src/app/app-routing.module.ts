@@ -32,6 +32,10 @@ const routes: Routes = [
     path: 'not-found',
     loadChildren: './pages/not-found/not-found.module#NotFoundPageModule'
   },
+  {
+    path: 'add-new-member',
+    loadChildren: './pages/add-new-member/add-new-member.module#AddNewMemberPageModule'
+  },
 ];
 
 @NgModule({

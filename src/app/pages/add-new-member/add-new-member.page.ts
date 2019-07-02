@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-not-found',
-  templateUrl: './not-found.page.html',
-  styleUrls: ['./not-found.page.scss'],
+  selector: 'app-add-new-member',
+  templateUrl: './add-new-member.page.html',
+  styleUrls: ['./add-new-member.page.scss'],
 })
-export class NotFoundPage implements OnInit {
+export class AddNewMemberPage implements OnInit {
 
   constructor(private router: Router) { }
 
@@ -15,9 +15,6 @@ export class NotFoundPage implements OnInit {
 
   homePage() {
     this.router.navigateByUrl('/home');
-  }
-  addNewMember() {
-    this.router.navigateByUrl('/add-new-member');
   }
 
 }

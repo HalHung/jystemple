@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="general-activity"></ion-back-button>
+    </ion-buttons>
+    <ion-title text-center>一般活動報名</ion-title>
+    <div class="jys" (click)="homePage()">
+      <img src="../../../assets/image/JYTemple.jpg"/>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>新增信眾</h1>
+  <ion-grid class="new-member-info">
+    <ion-row>
+      <ion-col size="3">報名者姓名: </ion-col>
+      <ion-col no-padding>
+        <ion-item>
+          <ion-input type="text" clearInput></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="3"><span class="field-name">電話號碼: </span></ion-col>
+      <ion-col no-padding>
+        <ion-item>
+          <ion-input type="number" clearInput></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col><ion-button><span class="field-name">活動報名</span></ion-button></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
