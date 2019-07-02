@@ -36,6 +36,10 @@ const routes: Routes = [
     path: 'add-new-member',
     loadChildren: './pages/add-new-member/add-new-member.module#AddNewMemberPageModule'
   },
+  {
+    path: 'sum',
+    loadChildren: './pages/sum/sum.module#SumPageModule'
+  },
 ];
 
 @NgModule({

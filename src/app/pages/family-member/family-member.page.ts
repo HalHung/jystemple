@@ -22,4 +22,7 @@ export class FamilyMemberPage implements OnInit {
   newActivity() {
     this.router.navigateByUrl('/new-activity');
   }
+  sum() {
+    this.router.navigateByUrl('/sum');
+  }
 }
