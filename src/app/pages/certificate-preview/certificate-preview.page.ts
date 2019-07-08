@@ -13,8 +13,8 @@ export class CertificatePreviewPage implements OnInit {
   ngOnInit() {
   }
 
-  homePage() {
-    this.router.navigateByUrl('/home');
+  print() {
+    this.router.navigateByUrl('/printing');
   }
 
 }

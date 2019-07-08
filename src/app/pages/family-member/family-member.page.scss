@@ -1,3 +1,11 @@
+ion-button {
+    font-size: 26px;
+    height: 46px;
+    --background: #9fcc8a;
+    --color: black;
+    margin-top: 16px;
+}
+
 .jys {
     position: absolute;
     right: 0%;
@@ -21,7 +29,19 @@
 
 .member-data {
     font-size: 26px;
-    padding: 1em 3em;
+    padding: 0em 3em 1em;
+
+    .row-title {
+        background: #71ad47;
+    }
+
+    .row-data {
+        background: #d6e3d0;
+    }
+
+    .col-other-color {
+        background: #fbe5d7;
+    }
 
     .checkbox {
         display: flex;

@@ -7,13 +7,21 @@
 }
 
 .applicant-info {
-    padding: 2em 6em;
+    padding: 2em 6em 0;
     font-size: 26px;
 }
 
 .member-data {
     font-size: 26px;
     padding: 1em 3em;
+
+    .row-title {
+        background: #71ad47;
+    }
+
+    .row-data {
+        background: #d6e3d0;
+    }
 
     ion-col {
         display: flex;
@@ -23,6 +31,7 @@
 
     .total {
         display: block;
+        padding: 16px 16px 16px 0;
 
         span {
             float: right;

@@ -22,6 +22,8 @@ ion-grid {
 ion-button {
     font-size: 26px;
     height: 46px;
+    --background: #9fcc8a;
+    --color: black;
 }
 
 .phone-number {
@@ -34,9 +36,9 @@ ion-button {
         margin-top: 20px;
     }
 
-    h1 {
-        // color: white;
-    }
+    // h1 {
+    //     color: white;
+    // }
 
     .float-right {
         float: right;

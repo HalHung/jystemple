@@ -25,18 +25,6 @@ const routes: Routes = [
     loadChildren: './pages/member-record/member-record.module#MemberRecordPageModule'
   },
   {
-    path: 'new-activity',
-    loadChildren: './pages/new-activity/new-activity.module#NewActivityPageModule'
-  },
-  {
-    path: 'not-found',
-    loadChildren: './pages/not-found/not-found.module#NotFoundPageModule'
-  },
-  {
-    path: 'add-new-member',
-    loadChildren: './pages/add-new-member/add-new-member.module#AddNewMemberPageModule'
-  },
-  {
     path: 'sum',
     loadChildren: './pages/sum/sum.module#SumPageModule'
   },
@@ -51,6 +39,10 @@ const routes: Routes = [
   {
     path: 'certificate-preview',
     loadChildren: './pages/certificate-preview/certificate-preview.module#CertificatePreviewPageModule'
+  },
+  {
+    path: 'printing',
+    loadChildren: './pages/printing/printing.module#PrintingPageModule'
   },
 ];
 

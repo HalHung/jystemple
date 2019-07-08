@@ -7,7 +7,7 @@
 }
 
 .applicant-info {
-    padding: 2em 2em;
+    padding: 2em 2em 1em;
     font-size: 26px;
 
     .phone-number {
@@ -19,6 +19,14 @@
     font-size: 26px;
     padding: 0% 5em;
 
+    .row-title {
+        background: #71ad47;
+    }
+
+    .row-data {
+        background: #d6e3d0;
+    }
+
     ion-col {
         display: flex;
         justify-content: center;
@@ -27,10 +35,12 @@
 }
 
 .btns {
-    padding: 3em 7em;
+    padding: 1em 7em;
 
     ion-button {
         height: 46px;
         font-size: 26px;
+        --background: #9fcc8a;
+        --color: black;
     }
 }

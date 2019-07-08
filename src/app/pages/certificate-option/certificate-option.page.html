@@ -14,13 +14,21 @@
   <div class="print-or-not">
     <ion-grid>
       <ion-row>
+        <ion-radio-group>
         <ion-col>要不要印感謝狀？</ion-col>
         <ion-col size="2">
-          <ion-checkbox></ion-checkbox>要
+          <ion-item lines="none">
+            <ion-label>要</ion-label>
+            <ion-radio slot="start" value="biff" checked></ion-radio>
+          </ion-item>
+          <!-- <ion-checkbox></ion-checkbox>要 -->
+          <ion-item lines="none">
+            <ion-label>不用(之後無法補印)</ion-label>
+            <ion-radio slot="start" value="griff"></ion-radio>
+          </ion-item>
+          <!-- <ion-checkbox></ion-checkbox>不用(之後無法補印) -->
         </ion-col>
-        <ion-col>
-          <ion-checkbox></ion-checkbox>不用(之後無法補印)
-        </ion-col>
+        </ion-radio-group>
       </ion-row>
     </ion-grid>
   </div>
