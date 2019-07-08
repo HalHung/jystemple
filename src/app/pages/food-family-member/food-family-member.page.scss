@@ -6,16 +6,8 @@ ion-button {
     margin-top: 16px;
 }
 
-.jys {
-    position: absolute;
-    right: 0%;
-    top: 0%;
-    height: 56px;
-    width: 56px;
-}
-
 .applicant-info {
-    padding: 2em 2em;
+    padding: 2em 4em 1em;
     font-size: 26px;
 
     .phone-number {
@@ -29,38 +21,31 @@ ion-button {
 
 .member-data {
     font-size: 26px;
-    padding: 0em 3em 1em;
+    padding: 0em 4em 1em;
 
     .row-title {
         background: #71ad47;
+        color: white;
     }
 
     .row-data {
         background: #d6e3d0;
     }
 
-    .col-other-color {
-        background: #fbe5d7;
+    ion-checkbox {
+        height: 26px;
+        width: 26px;
+        margin-top: 8px;
     }
 
-    .checkbox {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
+    .add-circle {
+        margin-top: 16px;
+        height: 46px;
+        width: 46px;
     }
 
     .submit {
         font-size: 26px;
         height: 46px;
     }
-}
-
-.alert-text {
-    text-align: center;
-}
-
-.singup-btn {
-    padding: 1em 3em;
-    text-align: center;
 }

@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title text-center>打齋報名</ion-title>
+    <div class="jys" (click)="homePage()">
+      <img src="../../../assets/image/JYTemple.jpg"/>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="applicant-info">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="1.5">
+            報名者: 
+          </ion-col>
+          <ion-col size="2">
+            陳大明
+          </ion-col>
+          <ion-col size="2">
+            行動電話: 
+          </ion-col>
+          <ion-col class="phone-number">
+            0987-654-321
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div>
+      <ion-grid class="member-data" text-center>
+        <ion-row class="row-title">
+          <ion-col size="3"></ion-col>
+          <ion-col size="3">6/30</ion-col>
+          <ion-col size="3">7/14</ion-col>
+          <ion-col size="3">7/28</ion-col>
+        </ion-row>
+        <ion-row class="row-data">
+          <ion-col size="3">陳爸爸</ion-col>
+          <ion-col size="3"><ion-checkbox></ion-checkbox></ion-col>
+          <ion-col size="3"><ion-checkbox></ion-checkbox></ion-col>
+          <ion-col size="3"><ion-checkbox></ion-checkbox></ion-col>
+        </ion-row>
+        <ion-row class="row-data">
+          <ion-col size="3">陳媽媽</ion-col>
+          <ion-col size="3"><ion-checkbox></ion-checkbox></ion-col>
+          <ion-col size="3"><ion-checkbox></ion-checkbox></ion-col>
+          <ion-col size="3"><ion-checkbox></ion-checkbox></ion-col>
+        </ion-row>
+        <ion-row class="row-data">
+          <ion-col size="3">陳老婆</ion-col>
+          <ion-col size="3"><ion-checkbox></ion-checkbox></ion-col>
+          <ion-col size="3"><ion-checkbox></ion-checkbox></ion-col>
+          <ion-col size="3"><ion-checkbox></ion-checkbox></ion-col>
+        </ion-row>
+        <ion-row class="row-data">
+          <ion-col size="3">陳兒子</ion-col>
+          <ion-col size="3"><ion-checkbox></ion-checkbox></ion-col>
+          <ion-col size="3"><ion-checkbox></ion-checkbox></ion-col>
+          <ion-col size="3"><ion-checkbox></ion-checkbox></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="3"><ion-icon name="add-circle" class="add-circle"></ion-icon></ion-col>
+          <ion-col size="3"></ion-col>
+          <ion-col size="3"></ion-col>
+          <ion-col size="3"><ion-button class="submit" (click)="sum()">確認</ion-button></ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+</ion-content>

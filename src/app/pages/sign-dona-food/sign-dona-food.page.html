@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title text-center>打齋報名</ion-title>
+    <div class="jys" (click)="homePage()">
+      <img src="../../../assets/image/JYTemple.jpg"/>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="3.5">請輸入電話號碼: </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-input clearInput type="number" no-padding></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col></ion-col>
+      <ion-col></ion-col>
+      <ion-col><ion-button (click)="foodFamily()">確認</ion-button></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

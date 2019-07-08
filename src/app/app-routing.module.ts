@@ -44,6 +44,14 @@ const routes: Routes = [
     path: 'printing',
     loadChildren: './pages/printing/printing.module#PrintingPageModule'
   },
+  {
+    path: 'sign-dona-food',
+    loadChildren: './pages/sign-dona-food/sign-dona-food.module#SignDonaFoodPageModule'
+  },
+  {
+    path: 'food-family-member',
+    loadChildren: './pages/food-family-member/food-family-member.module#FoodFamilyMemberPageModule'
+  },
 ];
 
 @NgModule({

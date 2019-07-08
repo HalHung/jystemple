@@ -18,5 +18,8 @@ export class HomePage implements OnInit {
   generalActPage() {
     this.router.navigateByUrl('/general-activity');
   }
+  signDonaFood() {
+    this.router.navigateByUrl('/sign-dona-food');
+  }
 
 }
