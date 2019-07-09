@@ -8,10 +8,13 @@ import { Router } from '@angular/router';
 })
 export class CertificateOptionPage implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    ) { }
 
   ngOnInit() {
   }
+  // reset() {}
 
   homePage() {
     this.router.navigateByUrl('/home');

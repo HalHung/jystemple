@@ -52,6 +52,18 @@ const routes: Routes = [
     path: 'food-family-member',
     loadChildren: './pages/food-family-member/food-family-member.module#FoodFamilyMemberPageModule'
   },
+  {
+    path: 'sign-dona-temple',
+    loadChildren: './pages/sign-dona-temple/sign-dona-temple.module#SignDonaTemplePageModule'
+  },
+  {
+    path: 'temple-family-member',
+    loadChildren: './pages/temple-family-member/temple-family-member.module#TempleFamilyMemberPageModule'
+  },
+  {
+    path: 'new-registration',
+    loadChildren: './pages/new-registration/new-registration.module#NewRegistrationPageModule'
+  },
 ];
 
 @NgModule({

@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title text-center>供養三寶</ion-title>
+    <div class="jys" (click)="homePage()">
+      <img src="../../../assets/image/JYTemple.jpg"/>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="applicant-info">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="1.5">
+            報名者: 
+          </ion-col>
+          <ion-col size="2">
+            陳大明
+          </ion-col>
+          <ion-col size="2">
+            行動電話: 
+          </ion-col>
+          <ion-col class="phone-number">
+            0987-654-321
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div>
+      <ion-grid class="member-data" text-center>
+        <ion-row class="row-data">
+          <ion-col size="1"><ion-checkbox></ion-checkbox></ion-col>
+          <ion-col size="3">陳爸爸</ion-col>
+          <ion-col size="1"><ion-checkbox></ion-checkbox></ion-col>
+          <ion-col size="3">陳媽媽</ion-col>
+          <ion-col size="1"><ion-checkbox></ion-checkbox></ion-col>
+          <ion-col size="3">陳老婆</ion-col>
+        </ion-row>
+        <ion-row class="row-data">
+          <ion-col size="1"><ion-checkbox></ion-checkbox></ion-col>
+          <ion-col size="3">陳兒子</ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid class="btns-grid">
+        <ion-row>
+          <ion-col size="3" text-center>
+            <ion-fab>
+              <ion-fab-button>
+                <ion-icon name="add"></ion-icon>
+              </ion-fab-button>
+            </ion-fab>              
+          </ion-col>
+          <ion-col size="3"></ion-col>
+          <ion-col size="3"></ion-col>
+          <ion-col size="3"><ion-button class="submit" (click)="sum()">確認</ion-button></ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+</ion-content>

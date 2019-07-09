@@ -34,6 +34,7 @@
   </div>
 
   <div class="certificate-name">
+    <form>
     <ion-grid>
       <ion-row>
         <ion-col>感謝狀上要印誰的名字？</ion-col>
@@ -54,12 +55,13 @@
         <ion-col size="5" class="margintop">抬頭是否要加上“闔家”？</ion-col>
         <ion-col class="margintop"><ion-checkbox></ion-checkbox>要</ion-col>
         <ion-col>
-          <ion-button (click)="preview()">確認</ion-button>
+          <!-- <ion-button (click)="reset()">清除</ion-button> -->
         </ion-col>
         <ion-col>
-          <ion-button>清除</ion-button>
+          <ion-button (click)="preview()">確認</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
+    </form>
   </div>
 </ion-content>

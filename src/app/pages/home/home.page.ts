@@ -21,5 +21,8 @@ export class HomePage implements OnInit {
   signDonaFood() {
     this.router.navigateByUrl('/sign-dona-food');
   }
+  signDonaTemple() {
+    this.router.navigateByUrl('/sign-dona-temple');
+  }
 
 }

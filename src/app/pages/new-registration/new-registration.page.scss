@@ -1,0 +1,29 @@
+ion-input {
+    font-size: 26px;
+}
+
+ion-button {
+    font-size: 26px;
+    height: 46px;
+    float: right;
+    --background: #9fcc8a;
+    --color: black;
+}
+
+ion-grid  {
+    padding: 0% 6em;
+}
+
+.info-input {
+    font-size: 26px;
+    padding: 5em 6em 1em;
+
+    span {
+        float: right;
+        padding-right: 16px;
+    }
+
+    .padding-top {
+        padding-top: 1em;
+    }
+}
