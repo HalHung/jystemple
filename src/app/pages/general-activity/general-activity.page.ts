@@ -16,23 +16,22 @@ export class GeneralActivityPage implements OnInit {
 
   ngOnInit() {
   }
+
   async presentAlertMultipleButtons() {
     const alert = await this.alertController.create({
       header: '查無資料',
       // subHeader: 'Subtitle',
-      message: '查無報名資料<br>請先填寫報名表',
+      message: '查無報名資料<br>請先填寫紙本報名表',
       buttons: [
         {
           text: '好，先離開',
-          role: 'cancel',
-          cssClass: 'secondary',
-          handler: (blah) => {
-            console.log('Confirm Cancel: blah');
+          handler: () => {
+            this.homePage();
           }
         }, {
           text: '已填好',
           handler: () => {
-            console.log('Confirm Okay');
+            this.newRegistration();
           }
         }
       ]
@@ -50,6 +49,9 @@ export class GeneralActivityPage implements OnInit {
   }
   elecSerialNum() {
     this.router.navigateByUrl('/elec-serial-num');
+  }
+  newRegistration() {
+    this.router.navigateByUrl('/new-registration');
   }
 
 }

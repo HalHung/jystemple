@@ -13,7 +13,7 @@
 <ion-content>
   <div class="block-layer"></div>
   <div class="phone-number">
-    <ion-grid>
+    <ion-grid class="input-grid">
       <ion-row>
         <ion-col>
           <h1>請輸入電話號碼: </h1>
@@ -28,18 +28,25 @@
         <ion-col>
           <h1 class="float-right">活動年度</h1>
         </ion-col>
-        <ion-col>
-
+        <ion-col size="2.5">
+          <ion-item>
+            <ion-datetime [pickerOptions]="customPickerOptions" placeholder="請選擇年份" displayFormat="YYYY" min="1912" max="2100"></ion-datetime>
+          </ion-item>
         </ion-col>
+        <ion-col></ion-col>
+        <ion-col></ion-col>
       </ion-row>
       <ion-row>
-        <ion-col>
+        <ion-col size="1"></ion-col>
+        <ion-col size="3">
           <ion-checkbox class="float-right"></ion-checkbox>
         </ion-col>
         <ion-col>
           <h1>包含上一年度未繳清單</h1>
         </ion-col>
       </ion-row>
+    </ion-grid>
+    <ion-grid class="btns">
       <ion-row>
         <ion-col>
           <ion-button (click)="elecSerialNum()" class="elec">改用電編查詢</ion-button>

@@ -64,6 +64,7 @@ const routes: Routes = [
     path: 'new-registration',
     loadChildren: './pages/new-registration/new-registration.module#NewRegistrationPageModule'
   },
+  { path: 'on-site-registration', loadChildren: './pages/on-site-registration/on-site-registration.module#OnSiteRegistrationPageModule' },
 ];
 
 @NgModule({

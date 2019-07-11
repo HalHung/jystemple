@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title text-center>一般活動報名(現場報名)</ion-title>
+    <div class="jys" (click)="homePage()">
+      <img src="../../../assets/image/JYTemple.jpg"/>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="applicant-info">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="1.5">
+            報名者: 
+          </ion-col>
+          <ion-col size="2">
+            陳大明
+          </ion-col>
+          <ion-col size="2">
+            行動電話: 
+          </ion-col>
+          <ion-col class="phone-number">
+            0987-654-321
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div>
+      <ion-grid class="member-data" text-center>
+        <ion-row class="row-title">
+          <ion-col>信眾</ion-col>
+          <ion-col>活動年度</ion-col>
+          <ion-col>報名活動</ion-col>
+        </ion-row>
+        <ion-row class="row-data">
+          <ion-col class="center-center">陳大明</ion-col>
+          <ion-col class="center-center">109</ion-col>
+          <ion-col>
+            <ion-item lines="none">
+              <ion-label>活動</ion-label>
+              <ion-select placeholder="請選擇" cancelText="取消" okText="確認">
+                <ion-select-option selected>光明燈</ion-select-option>
+                <ion-select-option>太歲燈</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row class="row-data">
+          <ion-col class="center-center">陳大明</ion-col>
+          <ion-col class="center-center">109</ion-col>
+          <ion-col>
+            <ion-item lines="none">
+              <ion-label>活動</ion-label>
+              <ion-select placeholder="請選擇" cancelText="取消" okText="確認">
+                <ion-select-option>光明燈</ion-select-option>
+                <ion-select-option>太歲燈</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid class="btns-grid">
+          <ion-row>
+            <ion-col size="3" text-center>
+              <ion-fab>
+                <ion-fab-button>
+                  <ion-icon name="add"></ion-icon>
+                </ion-fab-button>
+              </ion-fab>              
+            </ion-col>
+            <ion-col></ion-col>
+            <ion-col></ion-col>
+            <ion-col><ion-button class="submit" (click)="sum()">確認</ion-button></ion-col>
+          </ion-row>
+        </ion-grid>
+    </div>
+</ion-content>

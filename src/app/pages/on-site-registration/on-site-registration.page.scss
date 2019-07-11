@@ -1,0 +1,73 @@
+ion-button {
+    font-size: 26px;
+    height: 46px;
+    --background: #9fcc8a;
+    --color: black;
+}
+
+ion-fab-button {
+    --background: #9fcc8a;
+}
+
+ion-label {
+    width: fit-content;
+}
+
+ion-item {
+    font-size: 20px !important;
+}
+
+select {
+    text-align: center;
+
+}
+
+.applicant-info {
+    padding: 2em 4em 1em;
+    font-size: 26px;
+
+    .phone-number {
+        padding-top: 8px;
+    }
+
+    .elec-number {
+        padding-top: 8px;
+    }
+}
+
+.member-data {
+    font-size: 26px;
+    padding: 0em 5em 1em;
+
+    .row-title {
+        background: #71ad47;
+        color: white;
+    }
+
+    .row-data {
+        background: #d6e3d0;
+    }
+
+    ion-checkbox {
+        height: 26px;
+        width: 26px;
+        margin-top: 8px;
+    }
+
+    .add-circle {
+        margin-top: 16px;
+        height: 46px;
+        width: 46px;
+    }
+
+    .submit {
+        font-size: 26px;
+        height: 46px;
+    }
+}
+
+.center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

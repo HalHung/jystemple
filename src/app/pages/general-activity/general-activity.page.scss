@@ -1,4 +1,15 @@
-ion-grid {
+ion-button {
+    font-size: 26px;
+    height: 46px;
+    --background: #9fcc8a;
+    --color: black;
+}
+
+ion-datetime {
+    font-size: 21px;
+}
+
+.input-grid {
     padding: 7rem;
     font-size: 26px;
     
@@ -11,11 +22,12 @@ ion-grid {
     }
 }
 
-ion-button {
+.btns {
+    padding: 0 7em;
+}
+
+.abc {
     font-size: 26px;
-    height: 46px;
-    --background: #9fcc8a;
-    --color: black;
 }
 
 .phone-number {
@@ -41,6 +53,11 @@ ion-button {
     .float-right {
         float: right;
     }
+}
+
+.picker-wrapper sc-ion-picker-md {
+    margin: 0% !important;
+    --max-width: 100% !important;
 }
 
 // .block-layer {
