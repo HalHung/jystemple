@@ -7,64 +7,117 @@ const routes: Routes = [
     redirectTo: '/home',
     pathMatch: 'full'
   },
-  // { path: 'home', loadChildren: './home/home.module#HomePageModule' },
   {
     path: 'home',
-    loadChildren: './pages/home/home.module#HomePageModule'
+    children: [
+      {
+        path: '',
+        loadChildren: './pages/home/home.module#HomePageModule'
+      }
+    ]
   },
   {
     path: 'general-activity',
-    loadChildren: './pages/general-activity/general-activity.module#GeneralActivityPageModule'
-  },
-  {
-    path: 'family-member',
-    loadChildren: './pages/family-member/family-member.module#FamilyMemberPageModule'
-  },
-  {
-    path: 'member-record',
-    loadChildren: './pages/member-record/member-record.module#MemberRecordPageModule'
-  },
-  {
-    path: 'sum',
-    loadChildren: './pages/sum/sum.module#SumPageModule'
-  },
-  {
-    path: 'certificate-option',
-    loadChildren: './pages/certificate-option/certificate-option.module#CertificateOptionPageModule'
-  },
-  {
-    path: 'elec-serial-num',
-    loadChildren: './pages/elec-serial-num/elec-serial-num.module#ElecSerialNumPageModule'
-  },
-  {
-    path: 'certificate-preview',
-    loadChildren: './pages/certificate-preview/certificate-preview.module#CertificatePreviewPageModule'
-  },
-  {
-    path: 'printing',
-    loadChildren: './pages/printing/printing.module#PrintingPageModule'
+    children: [
+      {
+        path: '',
+        loadChildren: './pages/general-activity/general-activity.module#GeneralActivityPageModule'
+      },
+      {
+        path: 'family-member',
+        children: [
+          {
+            path: '',
+            loadChildren: './pages/family-member/family-member.module#FamilyMemberPageModule'
+          },
+          {
+            path: 'member-record',
+            loadChildren: './pages/member-record/member-record.module#MemberRecordPageModule'
+          },
+        ]
+      }
+    ]
   },
   {
     path: 'sign-dona-food',
-    loadChildren: './pages/sign-dona-food/sign-dona-food.module#SignDonaFoodPageModule'
-  },
-  {
-    path: 'food-family-member',
-    loadChildren: './pages/food-family-member/food-family-member.module#FoodFamilyMemberPageModule'
+    children: [
+      {
+        path: '',
+        loadChildren: './pages/sign-dona-food/sign-dona-food.module#SignDonaFoodPageModule'
+      },
+      {
+        path: 'food-family-member',
+        children: [
+          {
+            path: '',
+            loadChildren: './pages/food-family-member/food-family-member.module#FoodFamilyMemberPageModule'
+          }
+        ]
+      },
+    ]
   },
   {
     path: 'sign-dona-temple',
-    loadChildren: './pages/sign-dona-temple/sign-dona-temple.module#SignDonaTemplePageModule'
+    children: [
+      {
+        path: '',
+        loadChildren: './pages/sign-dona-temple/sign-dona-temple.module#SignDonaTemplePageModule'
+      },
+      {
+        path: 'temple-family-member',
+        children: [
+          {
+            path: '',
+            loadChildren: './pages/temple-family-member/temple-family-member.module#TempleFamilyMemberPageModule'
+          },
+        ]
+      },
+    ]
   },
   {
-    path: 'temple-family-member',
-    loadChildren: './pages/temple-family-member/temple-family-member.module#TempleFamilyMemberPageModule'
+    path: 'sum',
+    children: [
+      {
+        path: '',
+        loadChildren: './pages/sum/sum.module#SumPageModule'
+      },
+      {
+        path: 'certificate-option',
+        children: [
+          {
+            path: '',
+            loadChildren: './pages/certificate-option/certificate-option.module#CertificateOptionPageModule'
+          },
+          {
+            path: 'certificate-preview',
+            children: [
+              {
+                path: '',
+                loadChildren: './pages/certificate-preview/certificate-preview.module#CertificatePreviewPageModule'
+              },
+              {
+                path: 'printing',
+                loadChildren: './pages/printing/printing.module#PrintingPageModule'
+              },
+            ]
+          },
+        ]
+      },
+    ]
   },
   {
     path: 'new-registration',
-    loadChildren: './pages/new-registration/new-registration.module#NewRegistrationPageModule'
+    children: [
+      {
+        path: '',
+        loadChildren: './pages/new-registration/new-registration.module#NewRegistrationPageModule'
+      },
+      {
+        path: 'on-site-registration',
+        loadChildren: './pages/on-site-registration/on-site-registration.module#OnSiteRegistrationPageModule'
+      }
+    ]
   },
-  { path: 'on-site-registration', loadChildren: './pages/on-site-registration/on-site-registration.module#OnSiteRegistrationPageModule' },
 ];
 
 @NgModule({

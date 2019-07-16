@@ -43,10 +43,10 @@ export class SignDonaFoodPage implements OnInit {
     this.router.navigateByUrl('/home');
   }
   foodFamily() {
-    this.router.navigateByUrl('/food-family-member');
+    this.router.navigateByUrl('/sign-dona-food/food-family-member');
   }
   newRegistration() {
-    this.router.navigateByUrl('/new-registration');
+    this.router.navigateByUrl('/new-registration?from=sign-dona-food');
   }
 
 }

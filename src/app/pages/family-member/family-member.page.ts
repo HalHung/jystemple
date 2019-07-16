@@ -17,12 +17,12 @@ export class FamilyMemberPage implements OnInit {
     this.router.navigateByUrl('/home');
   }
   memberRecord() {
-    this.router.navigateByUrl('/member-record');
+    this.router.navigateByUrl('/general-activity/family-member/member-record');
   }
   newActivity() {
     this.router.navigateByUrl('/new-activity');
   }
   sum() {
-    this.router.navigateByUrl('/sum');
+    this.router.navigateByUrl('/sum?from=family-member');
   }
 }

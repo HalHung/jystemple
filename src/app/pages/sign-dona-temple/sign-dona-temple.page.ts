@@ -44,10 +44,10 @@ export class SignDonaTemplePage implements OnInit {
     this.router.navigateByUrl('/home');
   }
   templeFamily() {
-    this.router.navigateByUrl('/temple-family-member');
+    this.router.navigateByUrl('/sign-dona-temple/temple-family-member');
   }
   newRegistration() {
-    this.router.navigateByUrl('/new-registration');
+    this.router.navigateByUrl('/new-registration?from=sign-dona-temple');
   }
 
 }

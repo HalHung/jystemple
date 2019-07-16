@@ -8,6 +8,7 @@ import { AlertController } from '@ionic/angular';
   styleUrls: ['./general-activity.page.scss'],
 })
 export class GeneralActivityPage implements OnInit {
+  phone = false;
 
   constructor(
     private router: Router,
@@ -15,6 +16,11 @@ export class GeneralActivityPage implements OnInit {
     ) { }
 
   ngOnInit() {
+  }
+
+  segmentChanged(ev: any) {
+    this.phone = !this.phone;
+    console.log('phone = ' + this.phone, ev);
   }
 
   async presentAlertMultipleButtons() {
@@ -45,13 +51,13 @@ export class GeneralActivityPage implements OnInit {
     this.router.navigateByUrl('/home');
   }
   familyMember() {
-    this.router.navigateByUrl('/family-member');
+    this.router.navigateByUrl('/general-activity/family-member');
   }
   elecSerialNum() {
     this.router.navigateByUrl('/elec-serial-num');
   }
   newRegistration() {
-    this.router.navigateByUrl('/new-registration');
+    this.router.navigateByUrl('/new-registration?from=general-activity');
   }
 
 }

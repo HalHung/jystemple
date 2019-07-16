@@ -7,20 +7,23 @@ import { Router } from '@angular/router';
   styleUrls: ['./certificate-option.page.scss'],
 })
 export class CertificateOptionPage implements OnInit {
+  from: string;
 
   constructor(
     private router: Router,
     ) { }
 
   ngOnInit() {
+    const urlParams = new URLSearchParams(window.location.search);
+    this.from = urlParams.toString();
+    console.log('from=' + this.from);
   }
-  // reset() {}
 
   homePage() {
     this.router.navigateByUrl('/home');
   }
   preview() {
-    this.router.navigateByUrl('/certificate-preview');
+    this.router.navigateByUrl('/sum/certificate-option/certificate-preview?' + this.from);
   }
 
 }

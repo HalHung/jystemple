@@ -11,8 +11,11 @@
 </ion-header>
 
 <ion-content>
-  <div class="block-layer"></div>
-  <div class="phone-number">
+  <ion-segment (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="phone" class="seg-left" checked>電話查詢</ion-segment-button>
+    <ion-segment-button value="elecSerialNum" class="seg-right">電編查詢</ion-segment-button>
+  </ion-segment>
+  <div [ngClass]="phone? 'phone-number':'none'">
     <ion-grid class="input-grid">
       <ion-row>
         <ion-col>
@@ -49,15 +52,69 @@
     <ion-grid class="btns">
       <ion-row>
         <ion-col>
-          <ion-button (click)="elecSerialNum()" class="elec">改用電編查詢</ion-button>
         </ion-col>
         <ion-col>
-          <ion-button (click)="familyMember()" class="float-right">確認</ion-button><!--沒有輸入電話要disable-->
+          <ion-button (click)="familyMember()" class="float-right">確認</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
+    <div class="alert">
+      <ion-button (click)="presentAlertMultipleButtons()">alert</ion-button>
+    </div>
   </div>
-  <div class="alert">
-    <ion-button (click)="presentAlertMultipleButtons()">alert</ion-button>
+  
+  <div [ngClass]="phone? 'none':'elec-number'">
+    <ion-grid class="elec-grid">
+      <ion-row>
+        <ion-col size="2.5">
+          <h1>請輸入電編: </h1>
+        </ion-col>
+        <ion-col size="4">
+          <ion-item>
+            <ion-input clearInput type="number"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="1" class="center"> ~ </ion-col>
+        <ion-col size="4">
+          <ion-item>
+            <ion-input clearInput type="number"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="1"></ion-col>
+        <ion-col size="2">
+          <h1 class="float-right">活動年度</h1>
+        </ion-col>
+        <ion-col size="2.5">
+          <ion-item>
+            <ion-datetime placeholder="請選擇年份" displayFormat="YYYY" min="1912" max="2100"></ion-datetime>
+          </ion-item>
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-checkbox class="float-right"></ion-checkbox>
+        </ion-col>
+        <ion-col size="5">
+          <h1>包含上一年度未繳清單</h1>
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid class="btns">
+      <ion-row>
+        <ion-col>
+        </ion-col>
+        <ion-col>
+          <ion-button (click)="familyMember()" class="float-right">確認</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <div class="alert">
+      <ion-button (click)="presentAlertMultipleButtons()">alert</ion-button>
+    </div>
   </div>
+  
 </ion-content>

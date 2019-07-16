@@ -19,7 +19,7 @@ export class OnSiteRegistrationPage implements OnInit {
     this.router.navigateByUrl('/home');
   }
   sum() {
-    this.router.navigateByUrl('/sum');
+    this.router.navigateByUrl('/sum?from=on-site-registration');
   }
 
 }
